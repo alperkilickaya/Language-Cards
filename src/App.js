@@ -5,7 +5,7 @@ import Card from './components/card/Card'
 
 function App() {
   return (
-    <div className="container">
+    <div className="main-container">
       <div className="logo-container">
             <img className="react-logo" src={reactLogo} alt="" />
       </div>

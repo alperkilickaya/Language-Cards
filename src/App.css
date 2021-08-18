@@ -8,20 +8,19 @@ body{
   height: 100vh;;
 }
 
-.container{
+.main-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
 
 .logo-container{
-  width: 100%;
+  /*width: 100%;*/
   margin: 10px 0;
 }
 
 .react-logo{
-  width:100%;
+ /* width:100%; */
   height: 150px;
 }
 

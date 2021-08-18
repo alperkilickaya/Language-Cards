@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 
 function Item({card}){
-    
-    const [showLogo, setShowLogo] = useState(true);
+ 
+    const [showLogo, setShowState] = useState(false);
   
     return(
-        <div className="card" onClick={()=>setShowLogo(!showLogo)}>
+        <div className="card" onClick={()=>setShowState(!showLogo)}>
             {showLogo ?  
                 <>        
                 <img className="card-logo" src={card.img} alt="" />
                 <h3 className="card-title" >{card.name}</h3>
+                
                 </>
                 : 
                 <ul className="list">
-                    {card.options.map((element,i)=>{
+                    {card.options.map((optelement,i)=>{
                         return <li key={i}>
-                            {element}
+                            {optelement}
                         </li>
                     })
                     }
