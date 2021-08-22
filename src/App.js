@@ -1,19 +1,14 @@
-import reactLogo from './assets/react.svg';
 import './App.css';
+import Header from './components/header/header'
 import Card from './components/card/Card'
 
 
 function App() {
   return (
     <div className="main-container">
-      <div className="logo-container">
-            <img className="react-logo" src={reactLogo} alt="" />
-      </div>
-      <div className="cards-container">
-          <h5 className="cards-title">Languages</h5>
-          <Card />
-        </div>
-      </div>
+      <Header />
+      <Card />
+    </div>
   )
 }
 
