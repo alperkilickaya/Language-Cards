@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 function Item({card}){
  
-    const [showLogo, setShowState] = useState(true);
+    const [showLogo, setShowLogo] = useState(true);
   
     return(
-        <div className="card" onClick={()=>setShowState(!showLogo)}>
+        <div className="card" onClick={()=>setShowLogo(!showLogo)}>
             {showLogo ?  
                 <>        
                 <img className="card-logo" src={card.img} alt="logo" />

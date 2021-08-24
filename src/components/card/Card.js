@@ -7,12 +7,12 @@ const Card = () => {
 
   
     return( 
+        <div className="cards-area-container">
+            <h5 className="language-title">Languages</h5>
         <div className="cards-container">
-            <h5 className="cards-title">Languages</h5>
-        <div className="card-container">
             {categories.map((catElement,index) => {
                 return <Item card={catElement}
-                       key={index}/>
+                            key={index}/>
             })}
         </div>
         </div>      
